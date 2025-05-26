@@ -1,0 +1,30 @@
+/* General scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home section styling */
+#home {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image:
+    linear-gradient(135deg, rgba(30, 58, 138, 0.7), rgba(37, 99, 235, 0.7), rgba(59, 130, 246, 0.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Responsive background behavior */
+@media (max-width: 768px) {
+  #home {
+    background-attachment: scroll;
+  }
+}
